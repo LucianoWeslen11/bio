@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b1b8ca;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+img {
+  width: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 300px;
+  }
+}
