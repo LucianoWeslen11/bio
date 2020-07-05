@@ -1,15 +1,21 @@
 body {
+  width: 100vw;
+
   margin: 0;
   padding: 0;
-  background-color: #b1b8ca;
+  background-color: #bdc5da;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-top: 20px;
+  background-color: transparent;
+}
+
+a {
+  margin-bottom: 15px;
 }
 
 img {
