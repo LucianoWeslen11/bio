@@ -1,29 +1,166 @@
-body {
-  width: 100vw;
-
+/* RESET */
+*{
   margin: 0;
   padding: 0;
-  background-color: #bdc5da;
+  box-sizing: border-box;
 }
 
-.content {
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  background: linear-gradient(192.04deg, #001D3C 0%, #002D5D 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+body, a{
+  font-family: Heebo;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.header .header-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  background-color: transparent;
+  
+  margin-top: 15px;
 }
 
-a {
-  margin-bottom: 15px;
+.header .header-info .info-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF911C;
 }
 
-img {
-  width: 500px;
+.header .header-info .info-subtitle{
+  font-size: 16px;
 }
 
-@media only screen and (max-width: 500px) {
-  img {
-    width: 300px;
-  }
+/* SOCIAL MEDIA */
+.social-media{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.social-media .title{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.social-media .title-diviser{
+  width: 60px;
+  height: 4px;
+
+  background: #007BFE;
+
+  margin-top: 15px;
+}
+
+.social-media .buttons-group{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media .buttons-group .button{
+  margin-top: 15px;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media .buttons-group .button:hover{
+  opacity: 0.8;
+}
+
+.social-media .buttons-group .button .button-icon{
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #007BFE;
+  border-radius: 8px 0px 0px 8px;
+}
+
+
+.social-media .buttons-group .button .button-icon img{
+  height: 24px;
+}
+
+.social-media .buttons-group .button .button-text{
+  width: 100%;
+  height: 100%;
+
+  background-color: #FF911C;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-right: 15px;
+}
+
+.social-media .buttons-group .button .button-text span{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.phrase {
+  margin-top: 30px;
+  width: 300px;
+  height: 48px;
+
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phrase span{
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.phrase img{
+  height: 24px;
+}
+
+.footer{
+  margin-top: 30px;
+  width: 100%;
+  height: 48px;
+  background: #171717;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
